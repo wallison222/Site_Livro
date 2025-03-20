@@ -1,0 +1,16 @@
+body {
+    background-color: #121212; /* Cinza escuro quase preto */
+    background-image: url("/static/img/rafaela.jpg");
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h1 {
+    color: blue; /* Título azul */
+}

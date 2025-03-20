@@ -1,0 +1,23 @@
+<form method="POST">
+    {{ form.hidden_tag() }}
+
+    <div>
+        {{ form.email.label }} 
+        {{ form.email(class="form-control") }}
+        {% if form.email.errors %}
+            <span class="text-danger">{{ form.email.errors[0] }}</span>
+        {% endif %}
+    </div>
+
+    <div>
+        {{ form.senha.label }} 
+        {{ form.senha(class="form-control") }}
+        {% if form.senha.errors %}
+            <span class="text-danger">{{ form.senha.errors[0] }}</span>
+        {% endif %}
+    </div>
+
+    <div>
+        {{ form.submit(class="btn btn-primary") }}
+    </div>
+</form>

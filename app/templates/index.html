@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro Livro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=3">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <!-- Título estilizado -->
+        <h1 class="text-primary text-center">Livro</h1>
+
+        <!-- Alerta de sucesso -->
+        <div class="alert alert-success text-center" role="alert">
+            <p>Reticências.<br>Wallison & Rafaela.</p>
+        </div>
+
+        <div class="text-center mb-4">
+            <a href="{{ url_for('main.inicio') }}" class="btn btn-success" target="_blank">Abrir PDF</a>
+        </div>
+        
+    </div>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
